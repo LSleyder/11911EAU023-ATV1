@@ -1,6 +1,0 @@
-*.bin
-*.elf
-*.o
-*.vscode
-.vscode/targets.log
-.vscode/targets.log
