@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue May 31 16:24:14 2022
+# Make data base, printed on Tue May 31 16:36:29 2022
 
 # Variables
 
@@ -65,7 +65,7 @@ XDG_RUNTIME_DIR = /mnt/wslg/runtime-dir
 # environment
 VSCODE_LOG_STACK = false
 # environment
-VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-a1ad4ca9-6938-48ac-b789-17480f3f79bf.sock
+VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-15b98b27-c078-4e54-a18b-d6eebcfb89d6.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -177,9 +177,9 @@ MOTD_SHOWN = update-motd
 
 # Directories
 
-# . (device 2080, inode 92212): 13 files, no impossibilities.
+# . (device 2080, inode 92212): 14 files, no impossibilities.
 
-# 13 files, no impossibilities in 1 directories.
+# 14 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -276,18 +276,18 @@ main.o:
 # files hash-table stats:
 # Load=9/1024=1%, Rehash=0, Collisions=0/27=0%
 # VPATH Search Paths
- 
 
+ 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 22 / storage = 187 B / avg = 8 B
-# current buf: size = 8162 B / used = 187 B / count = 22 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 23 / storage = 198 B / avg = 8 B
+# current buf: size = 8162 B / used = 198 B / count = 23 / avg = 8 B
 
-# strcache performance: lookups = 36 / hit rate = 38%
+# strcache performance: lookups = 37 / hit rate = 37%
 # hash-table stats:
-# Load=22/8192=0%, Rehash=0, Collisions=1/36=3%
-# Finished Make data base on Tue May 31 16:24:14 2022
+# Load=23/8192=0%, Rehash=0, Collisions=1/37=3%
+# Finished Make data base on Tue May 31 16:36:29 2022
 
  
