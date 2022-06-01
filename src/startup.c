@@ -78,7 +78,7 @@ void fpu_handler(void) __attribute__ ((weak, alias("default_handler")));
 void spi4_handler(void) __attribute__ ((weak, alias("default_handler")));
 void spi5_handler(void) __attribute__ ((weak, alias("default_handler")));
 
-/*variaveis do linker*/
+/* Variaveis do linker */
 extern uint32_t _sdata;   /* Inicio da secao .data */
 extern uint32_t _edata;   /* Fim da secao .data */
 extern uint32_t _la_data; /* Endereco de carga na RAM da secao .data */
@@ -218,6 +218,7 @@ void reset_handler(void)
     /* Chama a funcao main() */
     main();
 }
+
 void default_handler(void)
 {
     while(1){};

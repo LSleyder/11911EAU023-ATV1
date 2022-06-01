@@ -49,6 +49,7 @@
 #define GPIO_BSRR_SET(n) (1 << (n))
 #define GPIO_BSRR_RESET(n) (1 << (n + 16))
 
+/* Variaveis para o set e reset do LED */
 #define LED_DELAY 50000
 
 static char fw_version[] = {'V', '1', '.', '0'};
@@ -69,6 +70,7 @@ int main(int argc, char *argv[])
     reg = *pRCC_AHB1ENR;
     reg |= RCC_AHB1ENR_GPIOCEN;
     *pRCC_AHB1ENR = reg;
+
     /* Configura PC13 como saida pull-up off e pull-down off */
     reg = *pGPIOC_MODER;
     reg &= ~(GPIO_MODER13_MASK);
@@ -83,8 +85,10 @@ int main(int argc, char *argv[])
     reg |= (GPIO_PUPDR_NONE << GPIO_PUPDR13_SHIFT);
     *pGPIOC_PUPDR = reg;
 
+    
     while(1)
     {
+        /* Comando set e reset(piscar) do LED */
         *pGPIOC_BSRR = GPIO_BSRR_SET(13);
         for (uint32_t i = 0; i < LED_DELAY; i++);
         *pGPIOC_BSRR = GPIO_BSRR_RESET(13);
