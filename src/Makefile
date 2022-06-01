@@ -7,8 +7,7 @@ CP = arm-none-eabi-objcopy
 CFLAGS = -mcpu=cortex-m4 -mthumb
 LFLAGS = -nostdlib -T stm32f411-rom.ld
 
-OBJS = startup.o \
-	main.o
+OBJS = startup.o main.o
 
 all: $(PROG).elf
 
